@@ -38,9 +38,13 @@ abstract class CourseDatabase: RoomDatabase() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
                 CoroutineScope(Dispatchers.IO).launch(){
-                    /*INSTANCE!!.courseDao().insertCourse(
-
-                    )*/
+                    INSTANCE!!.courseDao().insertCourse(
+                        Course(
+                            "Informatica móvil",
+                            "J.Arias",
+                            "Desarrollo de aplicaciones moviles para android"
+                        )
+                    )
                 }
             }
         }

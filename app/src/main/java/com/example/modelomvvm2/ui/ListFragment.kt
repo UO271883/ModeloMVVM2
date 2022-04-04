@@ -33,17 +33,16 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentListBinding.inflate(inflater, container, false)
-        courseViewModel.courseNames.observe(viewLifecycleOwner) { names ->
-            names.let { adapter.submitList(names.toMutableList()) }
-        }
-        adapter.onCreateViewHolder(binding.root, 4)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
+        courseViewModel.courseNames.observe(viewLifecycleOwner) { names ->
+            names.let { adapter.submitList(names.toMutableList()) }
+        }
+        adapter.onCreateViewHolder(binding.root, id) // NO ENTIENDO
     }
 
     override fun onDestroyView() {

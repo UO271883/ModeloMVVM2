@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.example.modelomvvm2.R
 import com.example.modelomvvm2.util.Utils
-import com.example.modelomvvm2.databinding.FragmentListBinding
 
 
 class CourseListAdapter: ListAdapter<String, CourseViewHolder>(Utils.DIFF_CALLBACK) {

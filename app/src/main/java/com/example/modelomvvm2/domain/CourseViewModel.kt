@@ -5,6 +5,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import com.example.modelomvvm2.data.Repository
+import com.example.modelomvvm2.model.Course
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class CourseViewModel(val repository: Repository): ViewModel() {
 
@@ -19,5 +23,12 @@ class CourseViewModel(val repository: Repository): ViewModel() {
             }
             throw IllegalArgumentException("Unknown ViewModel class")
         }
+    }
+
+    fun addCourse(course: Course): Boolean {
+        CoroutineScope(Dispatchers.Default).launch {
+            repository.insertCourse(course)
+        }
+        return true
     }
 }
