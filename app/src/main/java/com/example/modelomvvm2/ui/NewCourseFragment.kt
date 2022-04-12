@@ -60,7 +60,6 @@ class NewCourseFragment : Fragment() {
                 descripcion = descriptionEdit.text.toString()
             }catch (e: Exception){
                 System.err.println("Introduce el nombre de la asignatura")
-                TODO("IR A LA PANTALLA ANTERIOR")
             }
             return Course(nombre, profesor, descripcion)
 

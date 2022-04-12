@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
+import androidx.navigation.Navigation
 import com.example.modelomvvm2.R
 import com.example.modelomvvm2.databinding.ActivityMainBinding
 import com.example.modelomvvm2.domain.CourseViewModel
@@ -28,10 +29,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
-
-        binding.fab.setOnClickListener { view ->
-
-        }
+        binding.fab.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_global_NewCourseFragment))
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/UNI/Uni4/IS/PL/ModeloMVVM2/app/src/main/res/layout/activity_main.xml" value="0.25277777777777777" />
+        <entry key="..\:/UNI/Uni4/IS/PL/ModeloMVVM2/app/src/main/res/layout/content_main.xml" value="0.25277777777777777" />
+        <entry key="..\:/UNI/Uni4/IS/PL/ModeloMVVM2/app/src/main/res/layout/fragment_details.xml" value="0.25" />
+        <entry key="..\:/UNI/Uni4/IS/PL/ModeloMVVM2/app/src/main/res/layout/fragment_list.xml" value="0.25277777777777777" />
+        <entry key="..\:/UNI/Uni4/IS/PL/ModeloMVVM2/app/src/main/res/layout/fragment_new_course_fragment.xml" value="0.25277777777777777" />
         <entry key="..\:/Users/UO271883/AndroidStudioProjects/ModeloMVVM2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/UO271883/AndroidStudioProjects/ModeloMVVM2/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/UO271883/AndroidStudioProjects/ModeloMVVM2/app/src/main/res/layout/fragment_first.xml" value="0.1" />
